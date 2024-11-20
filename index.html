@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Titillium+Web|Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <img src="sidebarpic.jpg" alt="Profile Picture" />
+      <p class="headname">Kunlun Li</p>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <div class="home" id="home">
+        <img src="icon.jpg" alt="Profile Picture" />
+        <p class="namestart">
+          Hello, I am Kunlun Li. <br />
+          A Master's student at Johns Hopkins University, majoring in Electrical and Computer Engineering.
+        </p>
+        <p class="nameabout">
+          My current area of interest is image processing, particularly in applying deep learning and machine learning techniques to medical image analysis. Recently, I've also been exploring my interest in wavelet transforms and sparse representation.
+        </p>
+        <div class="socialicon">
+          <a href=""><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png" /></a>
+          <a href=""><img src="https://img.icons8.com/dusk/64/000000/github.png" /></a>
+          <a href=""><img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png" /></a>
+          <a href=""><img src="https://img.icons8.com/dusk/64/000000/pinterest.png" /></a>
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <h1>About Me</h1>
+        <p class="skill">Image processing (Medical)</p>
+        <div class="skills"><div class="html">90%</div></div>
+        <p class="skill">Deep Learning</p>
+        <div class="skills"><div class="js">90%</div></div>
+        <p class="skill">Machine Learning</p>
+        <div class="skills"><div class="php">80%</div></div>
+        <p class="skill">Computer Vision</p>
+        <div class="skills"><div class="wp">70%</div></div>
+        <p class="skill">Others (Wavelet and Compressed Sensing)</p>
+        <div class="skills"><div class="jm">50%</div></div>
+      </div>
+
+      <div class="projects" id="projects">
+        <h1>Projects</h1>
+
+        <!-- Project 1: Deep Learning-Based Liver Cancer Segmentation -->
+        <div class="project-details">
+          <div class="project-image-and-links">
+            <img src="https://www.researchgate.net/publication/359993976/figure/fig5/AS:1145685827166214@1650164195966/Examples-of-liver-segmentation-results-at-the-axial-view-images-for-the-various-models.png" />
+            <div class="project-links">
+              <a href="writeup.pdf" target="_blank">Final Write-up</a> |
+              <a href="https://github.com/YourGitHubRepo" target="_blank">GitHub Code</a>
+            </div>
+          </div>
+          <div class="project-description">
+            <h3>Deep Learning-Based Liver Cancer Segmentation Using U-net and DALU-Net</h3>
+            <p>Used U-net and DALU-Net (Deep Attention LSTM U-Net) to train on the 3D IRCADb dataset for liver tumor segmentation. Achieved a dice coefficient of 0.899 using DALU-Net.</p>
+          </div>
+        </div>
+
+        <!-- Project 2: Evaluation of Subarachnoid Space Volume -->
+        <div class="project-details">
+          <div class="project-image-and-links">
+            <img src="MRI.png" />
+            <div class="project-links">
+              <a href="subarachnoid_space_writeup.pdf" target="_blank">Final Write-up</a> |
+              <a href="https://youtube.com/demo_video" target="_blank">Demonstration</a>
+            </div>
+          </div>
+          <div class="project-description">
+            <h3>Evaluation of Subarachnoid Space Volume Using Segmentation Techniques in MRI Imaging</h3>
+            <p>Aligned T1w and T2w images to a 1mm MNI space, employed FastSurfer for ventricle segmentation in brain MRI, synthesized T2w images using CycleGAN, and calculated SAS volume in T2-weighted MRI images.</p>
+          </div>
+        </div>
+
+        <!-- Project 3: Epoch Extraction for Speaker Differentiation -->
+        <div class="project-details">
+          <div class="project-image-and-links">
+            <img src="filter.png" />
+            <div class="project-links">
+              <a href="epoch_extraction_paper.pdf" target="_blank">Paper</a> |
+              <a href="https://youtube.com/demo_video_epoch" target="_blank">Demonstration</a>
+            </div>
+          </div>
+          <div class="project-description">
+            <h3>Epoch Extraction for Speaker Differentiation Using Zero Frequency Filtering</h3>
+            <p>Designed a Zero Frequency Filter to extract the Epoch (glottal closure instant) from 1132 utterances collected from CMU_ARCTIC speech synthesis databases. Implemented a GMM for training and compared the accuracy with other filters like ZFR and ZPZFR. The filter was finally implemented on a VLSI board using VHDL.</p>
+          </div>
+        </div>
+
+        <!-- Project 4: Machine-Learning-Based Skin Lesion Segmentation and Classification -->
+        <div class="project-details">
+          <div class="project-image-and-links">
+            <img src="skin.png" />
+            <div class="project-links">
+              <a href="skin_lesion_writeup.pdf" target="_blank">Final Write-up</a> |
+              <a href="https://github.com/YourSkinLesionRepo" target="_blank">GitHub Code</a>
+            </div>
+          </div>
+          <div class="project-description">
+            <h3>Machine-Learning-Based Skin Lesion Segmentation and Classification</h3>
+            <p>This project focused on segmenting skin lesions and classifying them into three types: Common Nevi, Atypical Nevi, and Melanoma. The dataset was processed using Otsu's method for lesion segmentation and symmetry detection. The extracted features were used in a machine learning approach to predict lesion type, with a final evaluation based on various metrics.</p>
+          </div>
+        </div>
+
+        <!-- Project 5: Active Learning for Isolated Sign Language Recognition -->
+        <div class="project-details">
+          <div class="project-image-and-links">
+            <img src="sign.png" alt="Sign Language Recognition" />
+            <div class="project-links">
+              <a href="sign_language_paper.pdf" target="_blank">Paper</a> |
+              <a href="https://github.com/YourSignLanguageRepo" target="_blank">GitHub Code</a>
+            </div>
+          </div>
+          <div class="project-description">
+            <h3>Active Learning for Isolated Sign Language Recognition Using Depth Information</h3>
+            <p>Developed a model to predict depth information from sign language datasets such as WLASL, GISLR, and AUTSL. Extracted body landmarks and applied a transformer-based model combined with active learning techniques to recognize sign language. Achieved 96% accuracy on the tested datasets.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog" id="blog">
+        <h1>Blog</h1>
+        <a href="#"><img src="https://i.ibb.co/hYRb1V4/wallpapersden-com-python-programmer-1920x3413.jpg" alt="blog post" /></a>
+        <a href="#"><img src="https://i.ibb.co/hYRb1V4/wallpapersden-com-python-programmer-1920x3413.jpg" alt="blog post" /></a>
+        <a href="#"><img src="https://i.ibb.co/hYRb1V4/wallpapersden-com-python-programmer-1920x3413.jpg" alt="blog post" /></a>
+      </div>
+
+      <div class="contact" id="contact">
+        <h1>Contact</h1>
+        <div class="contact-socialicon">
+          <a href=""><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png" /></a>
+          <a href=""><img src="https://img.icons8.com/dusk/64/000000/github.png" /></a>
+          <a href=""><img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png" /></a>
+          <a href=""><img src="https://img.icons8.com/dusk/64/000000/pinterest.png" /></a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Appreciate Template From
+        <a href="https://github.com/MasterBrian99" target="_blank">MasterBrian..</a>
+      </p>
+    </footer>
+  </body>
+</html>

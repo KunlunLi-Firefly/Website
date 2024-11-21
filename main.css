@@ -88,6 +88,25 @@ nav a:hover:after {
   object-fit: cover;
 }
 
+.selfie-links {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.selfie-links a {
+  color: #1799b6;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.selfie-links a:hover {
+  text-decoration: underline;
+}
+
+
 .namestart {
   font-family: "Varela Round", sans-serif;
   font-size: 30px;
@@ -248,4 +267,12 @@ footer p {
   .skills {
     width: 100%;
   }
+}
+
+.email {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  color: #000000; /* Black color for the email text */
+  text-align: center; /* Center aligns the email */
 }

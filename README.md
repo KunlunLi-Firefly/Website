@@ -1,3 +1,3 @@
 <div align="center">
-<img src="./images/tenor.gif" width="220"/>
+<img src="tenor.gif" width="220"/>
 
